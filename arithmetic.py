@@ -6,7 +6,8 @@ def getSmaller(num):
         y = random.randint(100, 1000)
     return y
 
-while True:
+num_q = 999
+while True and num_q > 300:
     try:
         num_q = int(input("\nEnter number of questions:\n\n"))
         break
@@ -40,6 +41,6 @@ for i in range(num_q):
         divident = divisor * quotient
         q = f"{divident:<4} {sign} {divisor:<4} = "
 
-    print(f"{str(i+1) + '.':<8} {q}")
+    print(f"{str(i+1) + '.':<4} {q}")
 
 
